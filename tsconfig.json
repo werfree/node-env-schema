@@ -1,12 +1,24 @@
 {
     "compilerOptions": {
-      "target": "ES2020",
-      "module": "CommonJS",
-      "declaration": true,
-      "outDir": "./dist",
-      "strict": true,
-      "esModuleInterop": true
+        "module": "NodeNext", // Set module to NodeNext
+        "moduleResolution": "NodeNext", // Set moduleResolution to NodeNext
+        "declaration": true, // Emit declaration files (.d.ts)
+        "declarationMap": true, // Emit declaration maps for debugging
+        "esModuleInterop": true, // Allow importing CommonJS modules
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true, // Skip checking of library files
+        "strict": true, // Enable all strict type-checking options
+        "outDir": "./dist", // Output directory for compiled files
+        "baseUrl": ".", // Base directory for resolving non-relative modules
+        "resolveJsonModule": true, // Allow importing JSON files
+        "isolatedModules": true, // Ensure that each file can be safely transpiled
+        "target": "ESNext" // Use ESNext to ensure modern JS output
     },
-    "include": ["src/**/*","eslint.config.js"],
-    "exclude": ["node_modules", "dist"]
-}  
+    "include": [
+        "src/**/*.ts" // Include all TypeScript source files
+    ],
+    "exclude": [
+        "node_modules", // Exclude node_modules folder
+        "dist" // Exclude dist folder from source files
+    ]
+}

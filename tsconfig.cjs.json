@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS", // CommonJS output
+        "moduleResolution": "Node", // Use standard Node resolution
+        "target": "ES2020", // Modern JavaScript target
+        "outDir": "./dist/cjs", // Output to dist/cjs
+        "declaration": true, // Generate .d.ts files
+        "declarationMap": true, // Map declarations to the source
+        "esModuleInterop": true, // Allow importing CommonJS modules
+        "skipLibCheck": true,
+        "strict": true
+    },
+    "include": [
+        "src/**/*"
+    ], // Include all your TypeScript source files
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

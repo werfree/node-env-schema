@@ -30,17 +30,26 @@
     "url": "git+https://github.com/werfree/typedenv.git"
   },
   "author": "Sayantan Ghosh gsayantan01@gmail.com",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "files": [
     "dist",
     "README.md",
     "LICENSE"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
     "dev": "tsc --watch",
     "lint": "eslint . --ext .ts --fix",
     "format": "prettier --write .",
@@ -50,11 +59,10 @@
     "node": ">=14"
   },
   "devDependencies": {
-    "@types/node": "^22.15.3",
+    "@types/node": "^20.8.10",
     "@typescript-eslint/eslint-plugin": "^8.31.0",
     "@typescript-eslint/parser": "^8.31.0",
     "eslint": "^9.25.1",
-    "eslint-config-eslint": "^11.0.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3"
   }

@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "NodeNext", // Set module to NodeNext
+        "moduleResolution": "NodeNext", // Set moduleResolution to NodeNext
+        "target": "ES2020", // Modern JavaScript target
+        "outDir": "./dist/esm", // Output to dist/esm
+        "declaration": true, // Generate .d.ts files for types
+        "declarationMap": true, // Map declarations to the source
+        "esModuleInterop": true, // Allow importing CommonJS modules
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "strict": true,
+    },
+    "include": [
+        "src/**/*"
+    ], // Include all your TypeScript source files
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

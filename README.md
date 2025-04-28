@@ -1,15 +1,15 @@
-# typedenv
+# node-env-schema
 
 **Type-safe Environment Variable Validator for Node.js, Serverless, and other `process.env` based platforms**
 
-[![npm version](https://img.shields.io/npm/v/typedenv.svg)](https://www.npmjs.com/package/typedenv)
+[![npm version](https://img.shields.io/npm/v/node-env-schema.svg)](https://www.npmjs.com/package/node-env-schema)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 ---
 
 ## ✨ Introduction
 
-`typedenv` helps you **validate, parse, and type your environment variables at runtime** with **TypeScript** support.
+`node-env-schema` helps you **validate, parse, and type your environment variables at runtime** with **TypeScript** support.
 
 It ensures that your environment variables are:
 
@@ -27,13 +27,13 @@ It ensures that your environment variables are:
 ## 📦 Installation
 
 ```bash
-npm install typedenv
+npm install node-env-schema
 ```
 
 or
 
 ```bash
-yarn add typedenv
+yarn add node-env-schema
 ```
 
 ---
@@ -42,7 +42,7 @@ yarn add typedenv
 
 ```ts
 // env.ts
-import { defineEnv, validateEnv } from 'typedenv';
+import { defineEnv, validateEnv } from 'node-env-schema';
 
 const schema = defineEnv({
   NODE_ENV: ['development', 'production', 'test'],
@@ -69,7 +69,7 @@ console.log(env.DATABASE_URL); // string (validated URL)
 console.log(env.ENABLE_FEATURE); // boolean
 ```
 
-If any environment variable is missing, incorrectly typed, or invalid, `typedenv` will **throw an error at runtime**, helping you catch configuration issues early.
+If any environment variable is missing, incorrectly typed, or invalid, `node-env-schema` will **throw an error at runtime**, helping you catch configuration issues early.
 
 ---
 
@@ -114,7 +114,7 @@ Defines the environment schema.
 ## ⚙️ Advanced Example
 
 ```ts
-import { defineEnv, validateEnv } from 'typedenv';
+import { defineEnv, validateEnv } from 'node-env-schema';
 
 const schema = defineEnv({
   API_URL: 'url',
@@ -212,4 +212,4 @@ Error: Expected environment variable NODE_ENV to be one of [development, product
 
 ## 🌟 Support the project
 
-If you like `typedenv`, consider giving it a ⭐ on [GitHub](https://github.com/werfree/typedenv)!
+If you like `node-env-schema`, consider giving it a ⭐ on [GitHub](https://github.com/werfree/node-env-schema)!

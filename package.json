@@ -1,5 +1,5 @@
 {
-  "name": "typedenv",
+  "name": "node-env-schema",
   "version": "1.0.0",
   "description": "Type-safe env variable validator for Node.js, React, Vue, serverless. Validate, parse, and type your environment variables with runtime safety.",
   "keywords": [
@@ -19,15 +19,16 @@
     "defaults",
     "dotenv",
     "safe env validator",
-    "runtime validation"
+    "runtime validation",
+    "node-env-schema"
   ],
-  "homepage": "https://github.com/werfree/typedenv#readme",
+  "homepage": "https://github.com/werfree/node-env-schema#readme",
   "bugs": {
-    "url": "https://github.com/werfree/typedenv/issues"
+    "url": "https://github.com/werfree/node-env-schema/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/werfree/typedenv.git"
+    "url": "git+https://github.com/werfree/node-env-schema.git"
   },
   "author": "Sayantan Ghosh gsayantan01@gmail.com",
   "main": "./dist/cjs/index.js",

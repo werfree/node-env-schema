@@ -1,0 +1,61 @@
+{
+  "name": "typedenv",
+  "version": "1.0.0",
+  "description": "Type-safe env variable validator for Node.js, React, Vue, serverless. Validate, parse, and type your environment variables with runtime safety.",
+  "keywords": [
+    "Node.js",
+    "TypeScript",
+    "env validator",
+    "environment variables",
+    "validate env",
+    "parse env",
+    "type-safe env",
+    "runtime-safe env",
+    "production-ready",
+    "URL",
+    "URI",
+    "port",
+    "enums",
+    "defaults",
+    "dotenv",
+    "safe env validator",
+    "runtime validation"
+  ],
+  "homepage": "https://github.com/werfree/typedenv#readme",
+  "bugs": {
+    "url": "https://github.com/werfree/typedenv/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/werfree/typedenv.git"
+  },
+  "author": "Sayantan Ghosh gsayantan01@gmail.com",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@typescript-eslint/parser": "^8.31.0",
+    "eslint": "^9.25.1",
+    "eslint-config-eslint": "^11.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  }
+}

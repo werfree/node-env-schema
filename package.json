@@ -1,6 +1,6 @@
 {
   "name": "node-env-schema",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Type-safe env variable validator for Node.js, React, Vue, serverless. Validate, parse, and type your environment variables with runtime safety.",
   "keywords": [
     "Node.js",

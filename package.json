@@ -30,23 +30,22 @@
     "type": "git",
     "url": "git+https://github.com/werfree/node-env-schema.git"
   },
-  "author": "Sayantan Ghosh gsayantan01@gmail.com",
+  "author": "Sayantan Ghosh <gsayantan01@gmail.com>",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
-  ],
   "exports": {
     ".": {
       "import": "./dist/esm/index.js",
       "require": "./dist/cjs/index.js"
     }
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc --project tsconfig.esm.json",
